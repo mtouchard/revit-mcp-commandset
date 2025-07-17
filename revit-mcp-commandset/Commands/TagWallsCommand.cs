@@ -12,7 +12,7 @@ namespace RevitMCPCommandSet.Commands
         /// <summary>
         /// 命令名称
         /// </summary>
-        public override string CommandName => "tag_walls";
+        public override string CommandName => "tag_all_walls";
 
         /// <summary>
         /// 构造函数

@@ -7,5 +7,6 @@
         public string Name { get; set; }
         public string Category { get; set; }
         public Dictionary<string, string> Properties { get; set; } = new Dictionary<string, string>();
+        public string Action { get; set; }
     }
 }

@@ -55,4 +55,8 @@
       <Reference Include="System.Net.Http" />
     </ItemGroup>
 
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+      <Exec Command="xcopy /y &quot;$(TargetDir)*.dll&quot; &quot;$(AppData)\Autodesk\Revit\Addins\2024\Commands\RevitMCPCommandSet\2024&quot;&#xD;&#xA;xcopy /y &quot;$(TargetDir)*.pdb&quot; &quot;$(AppData)\Autodesk\Revit\Addins\2024\Commands\RevitMCPCommandSet\2024&quot;" />
+    </Target>
+
 </Project>
